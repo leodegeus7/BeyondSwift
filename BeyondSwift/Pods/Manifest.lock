@@ -1,21 +1,29 @@
 PODS:
+  - ObjectMapper (3.3.0)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
+  - SwiftLint (0.27.0)
 
 DEPENDENCIES:
+  - ObjectMapper (~> 3.3)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - ObjectMapper
     - RxCocoa
     - RxSwift
+    - SwiftLint
 
 SPEC CHECKSUMS:
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: db790b62633a013ac84fe1dea4ea6d267a9c1238
+PODFILE CHECKSUM: 24f950d29e5f6f5ffa8121508dcafa903cba7328
 
 COCOAPODS: 1.5.0

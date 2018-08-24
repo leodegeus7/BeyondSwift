@@ -10,8 +10,12 @@
 		11599ABBB92B9A8AF79983CC /* Pods_BeyondSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8B45720761D910277ADD7C /* Pods_BeyondSwiftUITests.framework */; };
 		58D66BF5F1EFF9A1FB348A3E /* Pods_BeyondSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D250B0B9D8DC8D8FA0C3C21 /* Pods_BeyondSwift.framework */; };
 		C8F5F63CF9A52D89DAECE8D0 /* Pods_BeyondSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB9F2AF7CC07363BAE05C93 /* Pods_BeyondSwiftTests.framework */; };
+		CD878AA2212DDF740026BA40 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD878AA1212DDF740026BA40 /* TestViewModel.swift */; };
+		CD878AA4212DE3A70026BA40 /* QuotesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD878AA3212DE3A70026BA40 /* QuotesAPI.swift */; };
+		CD878AA6212DE4240026BA40 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD878AA5212DE4240026BA40 /* Quote.swift */; };
+		CDB1E386212F016D00C5D093 /* QuotesTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDB1E385212F016C00C5D093 /* QuotesTableView.xib */; };
 		CDF35864212B4A1B003BD95E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF35863212B4A1B003BD95E /* AppDelegate.swift */; };
-		CDF35866212B4A1B003BD95E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF35865212B4A1B003BD95E /* ViewController.swift */; };
+		CDF35866212B4A1B003BD95E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF35865212B4A1B003BD95E /* TestViewController.swift */; };
 		CDF35869212B4A1B003BD95E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF35867212B4A1B003BD95E /* Main.storyboard */; };
 		CDF3586B212B4A1D003BD95E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF3586A212B4A1D003BD95E /* Assets.xcassets */; };
 		CDF3586E212B4A1D003BD95E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF3586C212B4A1D003BD95E /* LaunchScreen.storyboard */; };
@@ -43,9 +47,13 @@
 		9B4AB84F2EC86B29E56B8A8E /* Pods-BeyondSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeyondSwiftUITests/Pods-BeyondSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC8B45720761D910277ADD7C /* Pods_BeyondSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB9F2AF7CC07363BAE05C93 /* Pods_BeyondSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD878AA1212DDF740026BA40 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		CD878AA3212DE3A70026BA40 /* QuotesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesAPI.swift; sourceTree = "<group>"; };
+		CD878AA5212DE4240026BA40 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		CDB1E385212F016C00C5D093 /* QuotesTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesTableView.xib; sourceTree = "<group>"; };
 		CDF35860212B4A1B003BD95E /* BeyondSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeyondSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF35863212B4A1B003BD95E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDF35865212B4A1B003BD95E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDF35865212B4A1B003BD95E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		CDF35868212B4A1B003BD95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDF3586A212B4A1D003BD95E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF3586D212B4A1D003BD95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,7 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				CDF35863212B4A1B003BD95E /* AppDelegate.swift */,
-				CDF35865212B4A1B003BD95E /* ViewController.swift */,
+				CD878AA1212DDF740026BA40 /* TestViewModel.swift */,
+				CD878AA3212DE3A70026BA40 /* QuotesAPI.swift */,
+				CD878AA5212DE4240026BA40 /* Quote.swift */,
+				CDF35865212B4A1B003BD95E /* TestViewController.swift */,
+				CDB1E385212F016C00C5D093 /* QuotesTableView.xib */,
 				CDF35867212B4A1B003BD95E /* Main.storyboard */,
 				CDF3586A212B4A1D003BD95E /* Assets.xcassets */,
 				CDF3586C212B4A1D003BD95E /* LaunchScreen.storyboard */,
@@ -177,6 +189,7 @@
 				CDF3585D212B4A1B003BD95E /* Frameworks */,
 				CDF3585E212B4A1B003BD95E /* Resources */,
 				35775BAA7B7807A1EB32ADEB /* [CP] Embed Pods Frameworks */,
+				CDF35DA5212F2BBB00260B79 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -273,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB1E386212F016D00C5D093 /* QuotesTableView.xib in Resources */,
 				CDF3586E212B4A1D003BD95E /* LaunchScreen.storyboard in Resources */,
 				CDF3586B212B4A1D003BD95E /* Assets.xcassets in Resources */,
 				CDF35869212B4A1B003BD95E /* Main.storyboard in Resources */,
@@ -303,11 +317,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -352,6 +368,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CDF35DA5212F2BBB00260B79 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
 		CF15595D30ADB90D636E5722 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,8 +406,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF35866212B4A1B003BD95E /* ViewController.swift in Sources */,
+				CD878AA2212DDF740026BA40 /* TestViewModel.swift in Sources */,
+				CDF35866212B4A1B003BD95E /* TestViewController.swift in Sources */,
 				CDF35864212B4A1B003BD95E /* AppDelegate.swift in Sources */,
+				CD878AA6212DE4240026BA40 /* Quote.swift in Sources */,
+				CD878AA4212DE3A70026BA40 /* QuotesAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -497,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -553,9 +587,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4V6XCMA27T;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
 				INFOPLIST_FILE = BeyondSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -569,9 +606,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4V6XCMA27T;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
 				INFOPLIST_FILE = BeyondSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,7 +628,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -606,7 +650,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -623,7 +671,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -640,7 +692,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

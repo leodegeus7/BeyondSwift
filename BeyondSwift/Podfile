@@ -6,6 +6,8 @@ target 'BeyondSwift' do
   use_frameworks!
      pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
+    pod 'SwiftLint'
+    pod 'ObjectMapper', '~> 3.3'
   # Pods for BeyondSwift
 
   target 'BeyondSwiftTests' do

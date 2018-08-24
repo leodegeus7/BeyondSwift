@@ -1,6 +1,0 @@
-framework module Pods_BeyondSwiftTests {
-  umbrella header "Pods-BeyondSwiftTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
