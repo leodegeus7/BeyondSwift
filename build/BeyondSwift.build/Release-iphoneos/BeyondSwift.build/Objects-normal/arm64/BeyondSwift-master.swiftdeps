@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "f45de70418e460981d2b395267827dc0"
-build_time: [1535574244, 661878000]
-inputs:
-  "/Users/Shared/Jenkins/Desktop/BeyondSwift/BeyondSwift/ViewController.swift": [9223372036, 854775807]
-  "/Users/Shared/Jenkins/Desktop/BeyondSwift/BeyondSwift/AppDelegate.swift": [9223372036, 854775807]
