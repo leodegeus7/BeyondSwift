@@ -27,7 +27,6 @@ class ReactViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         quotesTableView.delegate = self
         quotesTableView.dataSource = self
         quotesTableView.estimatedRowHeight = 120
-        quotesTableView.rowHeight = UITableView.automaticDimension
         let nib = UINib(nibName: "QuoteCell", bundle: nil)
         quotesTableView.register(nib, forCellReuseIdentifier: "QuoteCellIdentifier")
     }
