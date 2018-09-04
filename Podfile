@@ -1,13 +1,19 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+inhibit_all_warnings!
+
 target 'BeyondSwift' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for BeyondSwift
-    pod 'RxSwift',    '~> 4.0'
-    pod 'RxCocoa',    '~> 4.0'
+    pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
+    pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
+    pod 'ObjectMapper'
+    pod 'Alamofire', '~> 4.7'
+    pod 'SwiftLint'
+    
   target 'BeyondSwiftTests' do
     inherit! :search_paths
     # Pods for testing

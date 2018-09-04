@@ -1,21 +1,47 @@
 PODS:
+  - Alamofire (4.7.3)
+  - ObjectMapper (3.3.0)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
+  - SwiftLint (0.27.0)
 
 DEPENDENCIES:
-  - RxCocoa (~> 4.0)
-  - RxSwift (~> 4.0)
+  - Alamofire (~> 4.7)
+  - ObjectMapper
+  - RxCocoa (from `https://github.com/ReactiveX/RxSwift.git`, branch `develop`)
+  - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, branch `develop`)
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - RxCocoa
-    - RxSwift
+    - Alamofire
+    - ObjectMapper
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  RxCocoa:
+    :branch: develop
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :branch: develop
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+CHECKOUT OPTIONS:
+  RxCocoa:
+    :commit: fd64b9564919c2c6a0a73f9d60badafb66586a7e
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :commit: fd64b9564919c2c6a0a73f9d60badafb66586a7e
+    :git: https://github.com/ReactiveX/RxSwift.git
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 37fd4804e8f261d63229404fa2a9ebda3d3c67a5
+PODFILE CHECKSUM: ed2f276b89c9ef7c6242e8481ff465903200c349
 
 COCOAPODS: 1.5.0

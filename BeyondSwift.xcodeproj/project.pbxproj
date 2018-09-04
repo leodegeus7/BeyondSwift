@@ -10,9 +10,16 @@
 		885052B9AAB61A7319CC880D /* Pods_BeyondSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9B0BCBAF9E078FCD7BB742 /* Pods_BeyondSwiftUITests.framework */; };
 		A7E344A5F623588D84FC4EC1 /* Pods_BeyondSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924E83057E83392A46322C07 /* Pods_BeyondSwiftTests.framework */; };
 		AC044DF784068631DDDCC448 /* Pods_BeyondSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE941BA0F3CF2FBA89655F9B /* Pods_BeyondSwift.framework */; };
+		CDBCF09C213D7EB20084AF86 /* ReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09B213D7EB20084AF86 /* ReactViewController.swift */; };
+		CDBCF09E213D7EC90084AF86 /* ReactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09D213D7EC90084AF86 /* ReactViewModel.swift */; };
+		CDBCF0A0213D7EDE0084AF86 /* ReactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBCF09F213D7EDE0084AF86 /* ReactView.xib */; };
+		CDBFA77D213D967300AC24F1 /* APIQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA77C213D967300AC24F1 /* APIQuotes.swift */; };
+		CDBFA77F213D97DB00AC24F1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA77E213D97DB00AC24F1 /* Quote.swift */; };
+		CDBFA789213DAD1200AC24F1 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA788213DAD1200AC24F1 /* QuoteTableViewCell.swift */; };
+		CDBFA78B213DAD3700AC24F1 /* QuoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBFA78A213DAD3700AC24F1 /* QuoteCell.xib */; };
+		CDBFA78D213DAECE00AC24F1 /* aspas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBFA78C213DAECE00AC24F1 /* aspas.png */; };
+		CDBFA78F213DB12300AC24F1 /* QuoteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA78E213DB12300AC24F1 /* QuoteCellViewModel.swift */; };
 		CDED3B73212B03C300890CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED3B72212B03C300890CF3 /* AppDelegate.swift */; };
-		CDED3B75212B03C300890CF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED3B74212B03C300890CF3 /* ViewController.swift */; };
-		CDED3B78212B03C300890CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDED3B76212B03C300890CF3 /* Main.storyboard */; };
 		CDED3B7A212B03C400890CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDED3B79212B03C400890CF3 /* Assets.xcassets */; };
 		CDED3B7D212B03C400890CF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDED3B7B212B03C400890CF3 /* LaunchScreen.storyboard */; };
 		CDED3B88212B03C400890CF3 /* BeyondSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED3B87212B03C400890CF3 /* BeyondSwiftTests.swift */; };
@@ -42,10 +49,17 @@
 		924E83057E83392A46322C07 /* Pods_BeyondSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758FE5A11A2FC597FCEDFD1 /* Pods-BeyondSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeyondSwiftTests/Pods-BeyondSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		B08EA2CBC0F8C34EEC4168CC /* Pods-BeyondSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift.release.xcconfig"; sourceTree = "<group>"; };
+		CDBCF09B213D7EB20084AF86 /* ReactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewController.swift; sourceTree = "<group>"; };
+		CDBCF09D213D7EC90084AF86 /* ReactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewModel.swift; sourceTree = "<group>"; };
+		CDBCF09F213D7EDE0084AF86 /* ReactView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReactView.xib; sourceTree = "<group>"; };
+		CDBFA77C213D967300AC24F1 /* APIQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIQuotes.swift; sourceTree = "<group>"; };
+		CDBFA77E213D97DB00AC24F1 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		CDBFA788213DAD1200AC24F1 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		CDBFA78A213DAD3700AC24F1 /* QuoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteCell.xib; sourceTree = "<group>"; };
+		CDBFA78C213DAECE00AC24F1 /* aspas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aspas.png; sourceTree = "<group>"; };
+		CDBFA78E213DB12300AC24F1 /* QuoteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCellViewModel.swift; sourceTree = "<group>"; };
 		CDED3B6F212B03C300890CF3 /* BeyondSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeyondSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDED3B72212B03C300890CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDED3B74212B03C300890CF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CDED3B77212B03C300890CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDED3B79212B03C400890CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDED3B7C212B03C400890CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDED3B7E212B03C400890CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +126,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD91CF60213EF2560088A434 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFA78C213DAECE00AC24F1 /* aspas.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CDBCF09A213D7DFD0084AF86 /* ReactScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CDBCF09B213D7EB20084AF86 /* ReactViewController.swift */,
+				CDBCF09D213D7EC90084AF86 /* ReactViewModel.swift */,
+				CDBCF09F213D7EDE0084AF86 /* ReactView.xib */,
+			);
+			path = ReactScreen;
+			sourceTree = "<group>";
+		};
+		CDBFA782213DAC0B00AC24F1 /* QuoteCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFA788213DAD1200AC24F1 /* QuoteTableViewCell.swift */,
+				CDBFA78E213DB12300AC24F1 /* QuoteCellViewModel.swift */,
+				CDBFA78A213DAD3700AC24F1 /* QuoteCell.xib */,
+			);
+			path = QuoteCell;
+			sourceTree = "<group>";
+		};
+		CDBFA783213DAC2300AC24F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFA77E213D97DB00AC24F1 /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDBFA784213DAC3400AC24F1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFA77C213D967300AC24F1 /* APIQuotes.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CDBFA785213DAC3F00AC24F1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CDED3B72212B03C300890CF3 /* AppDelegate.swift */,
+				CDED3B79212B03C400890CF3 /* Assets.xcassets */,
+				CDED3B7B212B03C400890CF3 /* LaunchScreen.storyboard */,
+				CDED3B7E212B03C400890CF3 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CDBFA786213DAC4B00AC24F1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CDBCF09A213D7DFD0084AF86 /* ReactScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CDBFA787213DAC5E00AC24F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFA782213DAC0B00AC24F1 /* QuoteCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CDED3B66212B03C300890CF3 = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +222,12 @@
 		CDED3B71212B03C300890CF3 /* BeyondSwift */ = {
 			isa = PBXGroup;
 			children = (
-				CDED3B72212B03C300890CF3 /* AppDelegate.swift */,
-				CDED3B74212B03C300890CF3 /* ViewController.swift */,
-				CDED3B76212B03C300890CF3 /* Main.storyboard */,
-				CDED3B79212B03C400890CF3 /* Assets.xcassets */,
-				CDED3B7B212B03C400890CF3 /* LaunchScreen.storyboard */,
-				CDED3B7E212B03C400890CF3 /* Info.plist */,
+				CDBFA784213DAC3400AC24F1 /* API */,
+				CD91CF60213EF2560088A434 /* Assets */,
+				CDBFA787213DAC5E00AC24F1 /* Cells */,
+				CDBFA786213DAC4B00AC24F1 /* Screens */,
+				CDBFA785213DAC3F00AC24F1 /* Support */,
+				CDBFA783213DAC2300AC24F1 /* Model */,
 			);
 			path = BeyondSwift;
 			sourceTree = "<group>";
@@ -177,6 +262,7 @@
 				CDED3B6C212B03C300890CF3 /* Frameworks */,
 				CDED3B6D212B03C300890CF3 /* Resources */,
 				3C4885340946E53DA472FAF3 /* [CP] Embed Pods Frameworks */,
+				CD91CF61213EF3100088A434 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -273,9 +359,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBFA78D213DAECE00AC24F1 /* aspas.png in Resources */,
+				CDBFA78B213DAD3700AC24F1 /* QuoteCell.xib in Resources */,
+				CDBCF0A0213D7EDE0084AF86 /* ReactView.xib in Resources */,
 				CDED3B7D212B03C400890CF3 /* LaunchScreen.storyboard in Resources */,
 				CDED3B7A212B03C400890CF3 /* Assets.xcassets in Resources */,
-				CDED3B78212B03C300890CF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,11 +445,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -370,6 +462,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CD91CF61213EF3100088A434 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -377,8 +482,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDED3B75212B03C300890CF3 /* ViewController.swift in Sources */,
 				CDED3B73212B03C300890CF3 /* AppDelegate.swift in Sources */,
+				CDBCF09E213D7EC90084AF86 /* ReactViewModel.swift in Sources */,
+				CDBFA77D213D967300AC24F1 /* APIQuotes.swift in Sources */,
+				CDBFA77F213D97DB00AC24F1 /* Quote.swift in Sources */,
+				CDBCF09C213D7EB20084AF86 /* ReactViewController.swift in Sources */,
+				CDBFA78F213DB12300AC24F1 /* QuoteCellViewModel.swift in Sources */,
+				CDBFA789213DAD1200AC24F1 /* QuoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,14 +524,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CDED3B76212B03C300890CF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDED3B77212B03C300890CF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CDED3B7B212B03C400890CF3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +535,21 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CDB49FE3213EF82E000A39B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B15B4CE8515729B36E32BE /* Pods-BeyondSwift.debug.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 2TV7TC7NKZ;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/BeyondSwift/Support/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leodegeus.beyoundSwift;
+				PRODUCT_NAME = BeyondSwift;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
 		CDED3B95212B03C500890CF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,33 +666,22 @@
 			};
 			name = Release;
 		};
-		CDED3B98212B03C500890CF3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B15B4CE8515729B36E32BE /* Pods-BeyondSwift.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4V6XCMA27T;
-				INFOPLIST_FILE = BeyondSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		CDED3B99212B03C500890CF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B08EA2CBC0F8C34EEC4168CC /* Pods-BeyondSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4V6XCMA27T;
-				INFOPLIST_FILE = BeyondSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwift;
+				DEVELOPMENT_TEAM = 2TV7TC7NKZ;
+				INFOPLIST_FILE = "$(SRCROOT)/BeyondSwift/Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leodegeus.beyoundSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,7 +696,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -608,7 +718,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -625,7 +739,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -642,7 +760,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V6XCMA27T;
 				INFOPLIST_FILE = BeyondSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.BeyondSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -666,8 +788,8 @@
 		CDED3B97212B03C500890CF3 /* Build configuration list for PBXNativeTarget "BeyondSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDED3B98212B03C500890CF3 /* Debug */,
 				CDED3B99212B03C500890CF3 /* Release */,
+				CDB49FE3213EF82E000A39B1 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
