@@ -13,7 +13,6 @@ target 'BeyondSwift' do
     pod 'ObjectMapper'
     pod 'Alamofire', '~> 4.7'
     pod 'SwiftLint'
-    pod 'Wallet'
     
   target 'BeyondSwiftTests' do
     inherit! :search_paths
