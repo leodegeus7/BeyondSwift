@@ -29,6 +29,8 @@ class ReactViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         //quotesTableView.estimatedRowHeight = UITableView.automaticDimension
         let nib = UINib(nibName: "QuoteCell", bundle: nil)
         quotesTableView.register(nib, forCellReuseIdentifier: "QuoteCellIdentifier")
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
