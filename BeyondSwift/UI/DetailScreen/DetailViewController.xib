@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="BeyondSwift" customModuleProvider="target">
             <connections>
+                <outlet property="authorLabel" destination="Kuj-zo-Zai" id="HXN-fr-Snk"/>
                 <outlet property="descriptionTextView" destination="2Yk-b2-q4d" id="lAj-2U-53L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,21 +22,43 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-b2-q4d">
-                    <rect key="frame" x="20" y="270" width="335" height="147"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="20" y="170" width="335" height="247"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuj-zo-Zai">
+                    <rect key="frame" x="20" y="446" width="57.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotation-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4J-Ld-R5A">
+                    <rect key="frame" x="20" y="115" width="56.5" height="45"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="MUA-kG-26a"/>
+                        <constraint firstAttribute="width" secondItem="R4J-Ld-R5A" secondAttribute="height" multiplier="1:0.8" id="cM5-TV-cyv"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.0" green="0.70196078429999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="2Yk-b2-q4d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="250" id="9YI-Jb-Bz7"/>
+                <constraint firstItem="2Yk-b2-q4d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="9YI-Jb-Bz7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Yk-b2-q4d" secondAttribute="trailing" constant="20" id="DkE-LA-Aad"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Yk-b2-q4d" secondAttribute="bottom" constant="250" id="PeS-z3-2cP"/>
+                <constraint firstItem="2Yk-b2-q4d" firstAttribute="top" secondItem="R4J-Ld-R5A" secondAttribute="bottom" constant="10" id="Yp2-d9-vbN"/>
+                <constraint firstItem="2Yk-b2-q4d" firstAttribute="leading" secondItem="R4J-Ld-R5A" secondAttribute="leading" id="Zuj-nY-3bb"/>
+                <constraint firstItem="Kuj-zo-Zai" firstAttribute="leading" secondItem="2Yk-b2-q4d" secondAttribute="leading" id="meV-38-45g"/>
                 <constraint firstItem="2Yk-b2-q4d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="q3R-VL-kb3"/>
+                <constraint firstItem="Kuj-zo-Zai" firstAttribute="top" secondItem="2Yk-b2-q4d" secondAttribute="bottom" constant="29" id="teJ-AK-mf0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="106.40000000000001" y="48.125937031484263"/>
         </view>
     </objects>
+    <resources>
+        <image name="quotation-white.png" width="300" height="234"/>
+    </resources>
 </document>

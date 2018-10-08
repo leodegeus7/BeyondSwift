@@ -10,9 +10,10 @@
 		885052B9AAB61A7319CC880D /* Pods_BeyondSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9B0BCBAF9E078FCD7BB742 /* Pods_BeyondSwiftUITests.framework */; };
 		A7E344A5F623588D84FC4EC1 /* Pods_BeyondSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924E83057E83392A46322C07 /* Pods_BeyondSwiftTests.framework */; };
 		AC044DF784068631DDDCC448 /* Pods_BeyondSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE941BA0F3CF2FBA89655F9B /* Pods_BeyondSwift.framework */; };
-		CDBCF09C213D7EB20084AF86 /* ReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09B213D7EB20084AF86 /* ReactViewController.swift */; };
-		CDBCF09E213D7EC90084AF86 /* ReactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09D213D7EC90084AF86 /* ReactViewModel.swift */; };
-		CDBCF0A0213D7EDE0084AF86 /* ReactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBCF09F213D7EDE0084AF86 /* ReactView.xib */; };
+		CD838AEE216C229400F782C8 /* quotation-white.png in Resources */ = {isa = PBXBuildFile; fileRef = CD838AED216C229400F782C8 /* quotation-white.png */; };
+		CDBCF09C213D7EB20084AF86 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09B213D7EB20084AF86 /* QuotesViewController.swift */; };
+		CDBCF09E213D7EC90084AF86 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09D213D7EC90084AF86 /* QuotesViewModel.swift */; };
+		CDBCF0A0213D7EDE0084AF86 /* QuotesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBCF09F213D7EDE0084AF86 /* QuotesView.xib */; };
 		CDBFA77D213D967300AC24F1 /* APIQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA77C213D967300AC24F1 /* APIQuotes.swift */; };
 		CDBFA77F213D97DB00AC24F1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA77E213D97DB00AC24F1 /* Quote.swift */; };
 		CDBFA789213DAD1200AC24F1 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA788213DAD1200AC24F1 /* QuoteTableViewCell.swift */; };
@@ -56,9 +57,10 @@
 		924E83057E83392A46322C07 /* Pods_BeyondSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758FE5A11A2FC597FCEDFD1 /* Pods-BeyondSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeyondSwiftTests/Pods-BeyondSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		B08EA2CBC0F8C34EEC4168CC /* Pods-BeyondSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift.release.xcconfig"; sourceTree = "<group>"; };
-		CDBCF09B213D7EB20084AF86 /* ReactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewController.swift; sourceTree = "<group>"; };
-		CDBCF09D213D7EC90084AF86 /* ReactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewModel.swift; sourceTree = "<group>"; };
-		CDBCF09F213D7EDE0084AF86 /* ReactView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReactView.xib; sourceTree = "<group>"; };
+		CD838AED216C229400F782C8 /* quotation-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quotation-white.png"; sourceTree = "<group>"; };
+		CDBCF09B213D7EB20084AF86 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		CDBCF09D213D7EC90084AF86 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		CDBCF09F213D7EDE0084AF86 /* QuotesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesView.xib; sourceTree = "<group>"; };
 		CDBFA77C213D967300AC24F1 /* APIQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIQuotes.swift; sourceTree = "<group>"; };
 		CDBFA77E213D97DB00AC24F1 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		CDBFA788213DAD1200AC24F1 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				CDD5E6AC216BD31F0011C983 /* Main.storyboard */,
 				CDBFA78C213DAECE00AC24F1 /* aspas.png */,
+				CD838AED216C229400F782C8 /* quotation-white.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -152,9 +155,9 @@
 		CDBCF09A213D7DFD0084AF86 /* ReactScreen */ = {
 			isa = PBXGroup;
 			children = (
-				CDBCF09B213D7EB20084AF86 /* ReactViewController.swift */,
-				CDBCF09D213D7EC90084AF86 /* ReactViewModel.swift */,
-				CDBCF09F213D7EDE0084AF86 /* ReactView.xib */,
+				CDBCF09B213D7EB20084AF86 /* QuotesViewController.swift */,
+				CDBCF09D213D7EC90084AF86 /* QuotesViewModel.swift */,
+				CDBCF09F213D7EDE0084AF86 /* QuotesView.xib */,
 			);
 			path = ReactScreen;
 			sourceTree = "<group>";
@@ -201,9 +204,9 @@
 		CDD5E698216BC4990011C983 /* DetailScreen */ = {
 			isa = PBXGroup;
 			children = (
-				CDD5E69B216BC4DE0011C983 /* DetailViewModel.swift */,
 				CDD5E69F216BC5340011C983 /* DetailViewController.swift */,
 				CDD5E6A0216BC5340011C983 /* DetailViewController.xib */,
+				CDD5E69B216BC4DE0011C983 /* DetailViewModel.swift */,
 			);
 			path = DetailScreen;
 			sourceTree = "<group>";
@@ -400,8 +403,9 @@
 				CDBFA78D213DAECE00AC24F1 /* aspas.png in Resources */,
 				CDD5E6A2216BC5340011C983 /* DetailViewController.xib in Resources */,
 				CDBFA78B213DAD3700AC24F1 /* QuoteCell.xib in Resources */,
-				CDBCF0A0213D7EDE0084AF86 /* ReactView.xib in Resources */,
+				CDBCF0A0213D7EDE0084AF86 /* QuotesView.xib in Resources */,
 				CDED3B7D212B03C400890CF3 /* LaunchScreen.storyboard in Resources */,
+				CD838AEE216C229400F782C8 /* quotation-white.png in Resources */,
 				CDED3B7A212B03C400890CF3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,11 +536,11 @@
 				CDD5E6A9216BCDAB0011C983 /* RootNavigationCoordinator.swift in Sources */,
 				CDD5E6A1216BC5340011C983 /* DetailViewController.swift in Sources */,
 				CDED3B73212B03C300890CF3 /* AppDelegate.swift in Sources */,
-				CDBCF09E213D7EC90084AF86 /* ReactViewModel.swift in Sources */,
+				CDBCF09E213D7EC90084AF86 /* QuotesViewModel.swift in Sources */,
 				CDBFA77D213D967300AC24F1 /* APIQuotes.swift in Sources */,
 				CDBFA77F213D97DB00AC24F1 /* Quote.swift in Sources */,
 				CDD5E69C216BC4DE0011C983 /* DetailViewModel.swift in Sources */,
-				CDBCF09C213D7EB20084AF86 /* ReactViewController.swift in Sources */,
+				CDBCF09C213D7EB20084AF86 /* QuotesViewController.swift in Sources */,
 				CDD5E6A6216BC67B0011C983 /* DependencyRegistry.swift in Sources */,
 				CDD5E6AB216BD0150011C983 /* SwinjectStoryboard+Extensions.swift in Sources */,
 				CDBFA78F213DB12300AC24F1 /* QuoteCellViewModel.swift in Sources */,

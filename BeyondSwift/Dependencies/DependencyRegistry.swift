@@ -54,7 +54,11 @@ class DependencyRegistryImpl:DependencyRegistry {
     func registerViewControllers() {
         container.register(DetailViewController.self) { (r, quote:Quote) in
             let viewModel = r.resolve(DetailViewModel.self, argument: quote)!
-            return DetailViewController(with: viewModel)
+            
+            //NOTE: We don't have access to the constructor for this VC so we are using method injection
+            let viewController =  DetailViewController(nibName: "DetailViewController", bundle: nil)
+            viewController.configure(with: viewModel, navigationCoordinator: self.navigationCoordinator)
+            return viewController
         }
     }
     

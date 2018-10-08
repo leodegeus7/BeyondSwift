@@ -19,7 +19,7 @@ extension SwinjectStoryboard {
         let dependencyRegistry: DependencyRegistry = AppDelegate.dependencyRegistry
         
         func main() {
-            dependencyRegistry.container.storyboardInitCompleted(ReactViewController.self) { r, viewController in
+            dependencyRegistry.container.storyboardInitCompleted(QuotesViewController.self) { r, viewController in
                 
                 let coordinator = dependencyRegistry.makeRootNavigationCoordinator(rootViewController: viewController)
     

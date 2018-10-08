@@ -22,7 +22,6 @@ class RootNavigationCoordinatorImpl:NavigationCoordinator {
     
     var registry: DependencyRegistry
     var rootViewController: UIViewController
-    
     var navState: NavigationState = .atMainList
     
     init(with rootViewController: UIViewController, registry: DependencyRegistry) {

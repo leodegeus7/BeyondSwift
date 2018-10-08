@@ -1,5 +1,5 @@
 //
-//  ReactViewController.swift
+//  QuotesViewController.swift
 //  BeyondSwift
 //
 //  Created by Leonardo Geus on 03/09/2018.
@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class ReactViewController: UIViewController,UITableViewDelegate {
+class QuotesViewController: UIViewController,UITableViewDelegate {
 
     @IBOutlet weak var quotesTableView: UITableView!
     fileprivate var viewModel:ReactViewModel!
@@ -21,11 +21,11 @@ class ReactViewController: UIViewController,UITableViewDelegate {
     
     let dataSource = RxTableViewSectionedReloadDataSource<QuoteSection>(
         configureCell: { (_, tableView, indexPath, item) -> QuoteTableViewCell in
-            let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCell", for: indexPath) as? QuoteTableViewCell
             let viewModel = QuoteCellViewModel(with: item)
-            cell?.configure(with: viewModel)
-            return cell!
-    },
+            let cell = QuoteTableViewCell.dequeue(from: tableView, for: indexPath, with: viewModel)
+            cell.configure(with: viewModel)
+            return cell
+        },
         titleForHeaderInSection: { dataSource, index in
             return dataSource.sectionModels[index].header
     })
@@ -42,21 +42,24 @@ class ReactViewController: UIViewController,UITableViewDelegate {
         super.viewDidLoad()
 
         QuoteTableViewCell.register(with: quotesTableView)
-        
-        viewModel.loadData {
-            self.quotesTableView.reloadData()
-        }
-        
+        updateData(self)
         initTableView()
+        self.title = "Quotes"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    @IBAction func updateData(_ sender: Any) {
+        viewModel.loadData {
+            self.quotesTableView.reloadData()
+        }
+    }
+    
 }
 
-extension ReactViewController {
+extension QuotesViewController {
     func initTableView() {
         viewModel.sections.asObservable()
             .bind(to: quotesTableView.rx.items(dataSource: dataSource))
@@ -74,7 +77,7 @@ extension ReactViewController {
     }
 }
 
-extension ReactViewController {
+extension QuotesViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }

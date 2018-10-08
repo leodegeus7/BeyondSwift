@@ -24,22 +24,19 @@ extension QuoteSection: SectionModelType {
 }
 
 protocol ReactViewModel {
-    var sections: Variable<[QuoteSection]> { get }
+    var sections: BehaviorRelay<[QuoteSection]> { get }
     func loadData(finished: @escaping BlockWithSource)
 }
  
 class ReactViewModelImpl:ReactViewModel {
-    var sections = Variable<[QuoteSection]>([])
-    var quotes = Variable<[Quote]>([])
+    var sections = BehaviorRelay<[QuoteSection]>(value: [])
+    var quotes = BehaviorRelay<[Quote]>(value: [])
     var apiLayer:APIQuotes
     fileprivate var bag = DisposeBag()
     
     init(apiLayer:APIQuotes) {
         self.apiLayer = apiLayer
         setupObservers()
-        apiLayer.getQuotes { (quotes) in
-            self.quotes.value = quotes
-        }
     }
 }
 
@@ -52,11 +49,11 @@ extension ReactViewModelImpl {
     
     func updateNewSections(with quotes: [Quote]) {
         func mainWork() {
-            sections.value = filter(spies: quotes)
+            sections.accept(filter(quotes: quotes))
         }
         
-        func filter(spies: [Quote]) -> [QuoteSection] {
-            return [QuoteSection(header: "All", items: spies)]
+        func filter(quotes: [Quote]) -> [QuoteSection] {
+            return [QuoteSection(header: "All", items: quotes)]
         }
         
         mainWork()
@@ -67,7 +64,7 @@ typealias BlockWithSource = () -> Void
 extension ReactViewModelImpl {
     func loadData(finished: @escaping BlockWithSource) {
         apiLayer.getQuotes { (quotes) in
-            self.quotes.value = quotes
+            self.quotes.accept(quotes)
             finished()
         }
     }
