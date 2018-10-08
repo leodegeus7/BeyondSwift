@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.0'
 
 inhibit_all_warnings!
 
@@ -10,9 +10,12 @@ target 'BeyondSwift' do
   # Pods for BeyondSwift
     pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
     pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
+    pod 'RxDataSources', '~> 3.0'
     pod 'ObjectMapper'
     pod 'Alamofire', '~> 4.7'
     pod 'SwiftLint'
+    pod 'Swinject'
+    pod 'SwinjectStoryboard'
     
   target 'BeyondSwiftTests' do
     inherit! :search_paths

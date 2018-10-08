@@ -12,17 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    static var dependencyRegistry: DependencyRegistry!
+    static var navigationCoordinator: NavigationCoordinator!
+    
     func applicationDidFinishLaunching(_ application: UIApplication) {
-        let controller =
-        ReactViewController.init(nibName: "ReactView", bundle: Bundle(for: AppDelegate.self))
-
-        let frame = UIScreen.main.bounds
-        window = UIWindow(frame: frame)
-
-        window!.rootViewController = controller
-        window!.makeKeyAndVisible()
-
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

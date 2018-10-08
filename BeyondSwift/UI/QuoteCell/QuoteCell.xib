@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuoteCell" rowHeight="153" id="vRO-Ah-Mb7" customClass="QuoteTableViewCell" customModule="BeyondSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vRO-Ah-Mb7" id="pdA-Ro-188">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="152.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any producer that need a manual to work is broken" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGZ-AG-ivY">
+                        <rect key="frame" x="20" y="15" width="335" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="mkK-yH-0HD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                        <color key="textColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Elon Musk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDV-Ez-NJv">
+                        <rect key="frame" x="20" y="97" width="77.5" height="20.5"/>
+                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                        <color key="textColor" red="0.24784375" green="0.24784375" blue="0.24784375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-T2-Fyk">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="2Lr-Nx-0xx"/>
+                            <constraint firstAttribute="width" secondItem="Y5C-T2-Fyk" secondAttribute="height" multiplier="1:1" id="xQv-Gy-B51"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kDV-Ez-NJv" firstAttribute="top" secondItem="BGZ-AG-ivY" secondAttribute="bottom" constant="2" id="6hE-Ab-2Zg"/>
+                    <constraint firstAttribute="trailing" secondItem="BGZ-AG-ivY" secondAttribute="trailing" constant="20" id="FiI-6h-kEU"/>
+                    <constraint firstItem="BGZ-AG-ivY" firstAttribute="leading" secondItem="pdA-Ro-188" secondAttribute="leading" constant="20" id="N3I-vO-AjN"/>
+                    <constraint firstItem="Y5C-T2-Fyk" firstAttribute="top" secondItem="pdA-Ro-188" secondAttribute="top" constant="10" id="NAL-mU-5Pp"/>
+                    <constraint firstItem="kDV-Ez-NJv" firstAttribute="leading" secondItem="pdA-Ro-188" secondAttribute="leading" constant="20" id="QId-qz-CQD"/>
+                    <constraint firstAttribute="bottom" secondItem="kDV-Ez-NJv" secondAttribute="bottom" constant="35" id="UYm-C2-sVu"/>
+                    <constraint firstItem="Y5C-T2-Fyk" firstAttribute="leading" secondItem="pdA-Ro-188" secondAttribute="leading" constant="10" id="pfw-Ft-k1C"/>
+                    <constraint firstItem="BGZ-AG-ivY" firstAttribute="top" secondItem="pdA-Ro-188" secondAttribute="top" constant="15" id="rYo-xE-Epb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="kDV-Ez-NJv" id="9Ul-5G-eYI"/>
+                <outlet property="quoteLabel" destination="BGZ-AG-ivY" id="hKU-O0-G4P"/>
+            </connections>
+            <point key="canvasLocation" x="-19" y="130"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="aspas.png" width="258" height="236"/>
+    </resources>
+</document>

@@ -19,6 +19,13 @@
 		CDBFA78B213DAD3700AC24F1 /* QuoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBFA78A213DAD3700AC24F1 /* QuoteCell.xib */; };
 		CDBFA78D213DAECE00AC24F1 /* aspas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBFA78C213DAECE00AC24F1 /* aspas.png */; };
 		CDBFA78F213DB12300AC24F1 /* QuoteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFA78E213DB12300AC24F1 /* QuoteCellViewModel.swift */; };
+		CDD5E69C216BC4DE0011C983 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E69B216BC4DE0011C983 /* DetailViewModel.swift */; };
+		CDD5E6A1216BC5340011C983 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E69F216BC5340011C983 /* DetailViewController.swift */; };
+		CDD5E6A2216BC5340011C983 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDD5E6A0216BC5340011C983 /* DetailViewController.xib */; };
+		CDD5E6A6216BC67B0011C983 /* DependencyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E6A5216BC67B0011C983 /* DependencyRegistry.swift */; };
+		CDD5E6A9216BCDAB0011C983 /* RootNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E6A8216BCDAB0011C983 /* RootNavigationCoordinator.swift */; };
+		CDD5E6AB216BD0150011C983 /* SwinjectStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E6AA216BD0150011C983 /* SwinjectStoryboard+Extensions.swift */; };
+		CDD5E6AD216BD3200011C983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD5E6AC216BD31F0011C983 /* Main.storyboard */; };
 		CDED3B73212B03C300890CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED3B72212B03C300890CF3 /* AppDelegate.swift */; };
 		CDED3B7A212B03C400890CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDED3B79212B03C400890CF3 /* Assets.xcassets */; };
 		CDED3B7D212B03C400890CF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDED3B7B212B03C400890CF3 /* LaunchScreen.storyboard */; };
@@ -58,6 +65,13 @@
 		CDBFA78A213DAD3700AC24F1 /* QuoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteCell.xib; sourceTree = "<group>"; };
 		CDBFA78C213DAECE00AC24F1 /* aspas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aspas.png; sourceTree = "<group>"; };
 		CDBFA78E213DB12300AC24F1 /* QuoteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCellViewModel.swift; sourceTree = "<group>"; };
+		CDD5E69B216BC4DE0011C983 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CDD5E69F216BC5340011C983 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CDD5E6A0216BC5340011C983 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		CDD5E6A5216BC67B0011C983 /* DependencyRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRegistry.swift; sourceTree = "<group>"; };
+		CDD5E6A8216BCDAB0011C983 /* RootNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationCoordinator.swift; sourceTree = "<group>"; };
+		CDD5E6AA216BD0150011C983 /* SwinjectStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		CDD5E6AC216BD31F0011C983 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CDED3B6F212B03C300890CF3 /* BeyondSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeyondSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDED3B72212B03C300890CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDED3B79212B03C400890CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +143,7 @@
 		CD91CF60213EF2560088A434 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				CDD5E6AC216BD31F0011C983 /* Main.storyboard */,
 				CDBFA78C213DAECE00AC24F1 /* aspas.png */,
 			);
 			path = Assets;
@@ -162,14 +177,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CDBFA784213DAC3400AC24F1 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				CDBFA77C213D967300AC24F1 /* APIQuotes.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		CDBFA785213DAC3F00AC24F1 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,20 +188,49 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		CDBFA786213DAC4B00AC24F1 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				CDBCF09A213D7DFD0084AF86 /* ReactScreen */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		CDBFA787213DAC5E00AC24F1 /* Cells */ = {
+		CDBFA786213DAC4B00AC24F1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				CDBFA782213DAC0B00AC24F1 /* QuoteCell */,
+				CDD5E698216BC4990011C983 /* DetailScreen */,
+				CDBCF09A213D7DFD0084AF86 /* ReactScreen */,
 			);
-			path = Cells;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CDD5E698216BC4990011C983 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CDD5E69B216BC4DE0011C983 /* DetailViewModel.swift */,
+				CDD5E69F216BC5340011C983 /* DetailViewController.swift */,
+				CDD5E6A0216BC5340011C983 /* DetailViewController.xib */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		CDD5E6A3216BC5BF0011C983 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				CDD5E6A5216BC67B0011C983 /* DependencyRegistry.swift */,
+				CDD5E6AA216BD0150011C983 /* SwinjectStoryboard+Extensions.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		CDD5E6A4216BC5D10011C983 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFA77C213D967300AC24F1 /* APIQuotes.swift */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		CDD5E6A7216BCD960011C983 /* NavigationCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CDD5E6A8216BCDAB0011C983 /* RootNavigationCoordinator.swift */,
+			);
+			path = NavigationCoordinators;
 			sourceTree = "<group>";
 		};
 		CDED3B66212B03C300890CF3 = {
@@ -222,10 +258,11 @@
 		CDED3B71212B03C300890CF3 /* BeyondSwift */ = {
 			isa = PBXGroup;
 			children = (
-				CDBFA784213DAC3400AC24F1 /* API */,
+				CDD5E6A7216BCD960011C983 /* NavigationCoordinators */,
+				CDD5E6A4216BC5D10011C983 /* ModelLayer */,
+				CDD5E6A3216BC5BF0011C983 /* Dependencies */,
 				CD91CF60213EF2560088A434 /* Assets */,
-				CDBFA787213DAC5E00AC24F1 /* Cells */,
-				CDBFA786213DAC4B00AC24F1 /* Screens */,
+				CDBFA786213DAC4B00AC24F1 /* UI */,
 				CDBFA785213DAC3F00AC24F1 /* Support */,
 				CDBFA783213DAC2300AC24F1 /* Model */,
 			);
@@ -359,7 +396,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD5E6AD216BD3200011C983 /* Main.storyboard in Resources */,
 				CDBFA78D213DAECE00AC24F1 /* aspas.png in Resources */,
+				CDD5E6A2216BC5340011C983 /* DetailViewController.xib in Resources */,
 				CDBFA78B213DAD3700AC24F1 /* QuoteCell.xib in Resources */,
 				CDBCF0A0213D7EDE0084AF86 /* ReactView.xib in Resources */,
 				CDED3B7D212B03C400890CF3 /* LaunchScreen.storyboard in Resources */,
@@ -446,16 +485,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -482,11 +529,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD5E6A9216BCDAB0011C983 /* RootNavigationCoordinator.swift in Sources */,
+				CDD5E6A1216BC5340011C983 /* DetailViewController.swift in Sources */,
 				CDED3B73212B03C300890CF3 /* AppDelegate.swift in Sources */,
 				CDBCF09E213D7EC90084AF86 /* ReactViewModel.swift in Sources */,
 				CDBFA77D213D967300AC24F1 /* APIQuotes.swift in Sources */,
 				CDBFA77F213D97DB00AC24F1 /* Quote.swift in Sources */,
+				CDD5E69C216BC4DE0011C983 /* DetailViewModel.swift in Sources */,
 				CDBCF09C213D7EB20084AF86 /* ReactViewController.swift in Sources */,
+				CDD5E6A6216BC67B0011C983 /* DependencyRegistry.swift in Sources */,
+				CDD5E6AB216BD0150011C983 /* SwinjectStoryboard+Extensions.swift in Sources */,
 				CDBFA78F213DB12300AC24F1 /* QuoteCellViewModel.swift in Sources */,
 				CDBFA789213DAD1200AC24F1 /* QuoteTableViewCell.swift in Sources */,
 			);
