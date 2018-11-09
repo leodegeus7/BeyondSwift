@@ -14,6 +14,8 @@ class Quote: Mappable {
     var quote: String?
     var cat: String?
 
+
+    
     required init?(map: Map) {
 
     }

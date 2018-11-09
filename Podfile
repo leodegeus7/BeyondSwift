@@ -17,9 +17,14 @@ target 'BeyondSwift' do
     pod 'Swinject'
     pod 'SwinjectStoryboard'
     
+    def testing_pods
+        pod 'Quick'
+        pod 'Nimble'
+    end
+    
   target 'BeyondSwiftTests' do
-    inherit! :search_paths
-    # Pods for testing
+      inherit! :search_paths
+    testing_pods
   end
 
   target 'BeyondSwiftUITests' do

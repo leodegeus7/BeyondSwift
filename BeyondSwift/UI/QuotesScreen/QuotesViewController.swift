@@ -28,7 +28,8 @@ class QuotesViewController: UIViewController,UITableViewDelegate {
         },
         titleForHeaderInSection: { dataSource, index in
             return dataSource.sectionModels[index].header
-    })
+        }
+    )
     
     func configure(with viewModel: ReactViewModel,
                    navigationCoordinator: NavigationCoordinator,
