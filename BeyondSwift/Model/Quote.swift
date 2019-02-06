@@ -12,10 +12,7 @@ import ObjectMapper
 class Quote: Mappable {
     var author: String?
     var quote: String?
-    var cat: String?
 
-
-    
     required init?(map: Map) {
 
     }
@@ -23,6 +20,5 @@ class Quote: Mappable {
     func mapping(map: Map) {
         author <- map["author"]
         quote <- map["quote"]
-        cat <- map["cat"]
     }
 }

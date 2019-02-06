@@ -20,7 +20,7 @@ class APIQuotesImpl:APIQuotes {
     }
 
     func getQuotes(completion: @escaping (_ result: [Quote]) -> Void) {
-        Alamofire.request("https://talaikis.com/api/quotes/").responseJSON { (response) in
+        Alamofire.request("https://breaking-bad-quotes.herokuapp.com/v1/quotes/10").responseJSON { (response) in
             if let json = response.result.value {
                 let quotes = Mapper<Quote>().mapArray(JSONObject: json)
                 if let quotes = quotes {
