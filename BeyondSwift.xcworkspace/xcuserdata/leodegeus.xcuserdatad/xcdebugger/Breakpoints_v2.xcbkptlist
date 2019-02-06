@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Podfile"
-            timestampString = "561583529.536886"
+            timestampString = "571157416.079304"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -54,11 +54,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeyondSwift/Dependencies/SwinjectStoryboard+Extensions.swift"
-            timestampString = "571151259.035381"
+            timestampString = "571169011.464904"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -67,14 +67,14 @@
             landmarkType = "9">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "main #1 () -&gt; () in static (extension in BeyondSwift):SwinjectStoryboard.SwinjectStoryboard.setup() -&gt; ()"
                   moduleName = "BeyondSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/leodegeus/BeyondSwift/BeyondSwift/Dependencies/SwinjectStoryboard+Extensions.swift"
-                  timestampString = "571151198.44927"
+                  timestampString = "571164457.851566"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -82,14 +82,14 @@
                   offsetFromSymbolStart = "29">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swinject.Resolver, BeyondSwift.QuotesViewController) -&gt; () in main #1 () -&gt; () in static (extension in BeyondSwift):SwinjectStoryboard.SwinjectStoryboard.setup() -&gt; ()"
                   moduleName = "BeyondSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/leodegeus/BeyondSwift/BeyondSwift/Dependencies/SwinjectStoryboard+Extensions.swift"
-                  timestampString = "571151198.453378"
+                  timestampString = "571164457.85401"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"

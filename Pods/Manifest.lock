@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - CRRefresh (1.1.3)
   - Differentiator (3.1.0)
   - Nimble (7.3.1)
   - ObjectMapper (3.3.0)
@@ -18,6 +19,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - CRRefresh
   - Nimble
   - ObjectMapper
   - Quick
@@ -31,6 +33,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - CRRefresh
     - Differentiator
     - Nimble
     - ObjectMapper
@@ -58,6 +61,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
@@ -69,6 +73,6 @@ SPEC CHECKSUMS:
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: a06b5bcd62dae212dcda99ef056ba60f75f759a9
+PODFILE CHECKSUM: b7f1919960d52cef08237c8d64784268d8ca3fe4
 
 COCOAPODS: 1.5.0

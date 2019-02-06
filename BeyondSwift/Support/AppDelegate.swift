@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var navigationCoordinator: NavigationCoordinator!
     
     func applicationDidFinishLaunching(_ application: UIApplication) {
+        UIApplication.shared.statusBarStyle = .lightContent
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

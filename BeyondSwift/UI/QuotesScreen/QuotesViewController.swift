@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxDataSources
+import CRRefresh
 
 class QuotesViewController: UIViewController,UITableViewDelegate {
 
@@ -18,16 +19,14 @@ class QuotesViewController: UIViewController,UITableViewDelegate {
     fileprivate var quoteCellMaker: DependencyRegistry.QuoteCellMaker!
     weak var navigationCoordinator: NavigationCoordinator?
     private let disposebag = DisposeBag()
+    @IBOutlet weak var refreshButton: UIBarButtonItem!
     
     let dataSource = RxTableViewSectionedReloadDataSource<QuoteSection>(
-        configureCell: { (_, tableView, indexPath, item) -> QuoteTableViewCell in
-            let viewModel = QuoteCellViewModel(with: item)
-            let cell = QuoteTableViewCell.dequeue(from: tableView, for: indexPath, with: viewModel)
+        configureCell: { (_, tableView, indexPath, item) -> Quote2TableViewCell in
+            let viewModel = Quote2CellViewModel(with: item)
+            let cell = Quote2TableViewCell.dequeue(from: tableView, for: indexPath, with: viewModel)
             cell.configure(with: viewModel)
             return cell
-        },
-        titleForHeaderInSection: { dataSource, index in
-            return dataSource.sectionModels[index].header
         }
     )
     
@@ -41,11 +40,10 @@ class QuotesViewController: UIViewController,UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        QuoteTableViewCell.register(with: quotesTableView)
+        Quote2TableViewCell.register(with: quotesTableView)
         updateData(self)
         initTableView()
-        self.title = "Quotes"
+        self.title = "Breaking Bad Quotes"
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +60,22 @@ class QuotesViewController: UIViewController,UITableViewDelegate {
 
 extension QuotesViewController {
     func initTableView() {
+        
+        quotesTableView.estimatedRowHeight = 200
+        quotesTableView.rowHeight = UITableView.automaticDimension
+        quotesTableView.backgroundColor = UIColor(red: 0/255, green: 18/255, blue: 29/255, alpha: 1)
+        quotesTableView.separatorColor = UIColor.clear
+        refreshButton.tintColor = UIColor.white
+        self.quotesTableView.cr.addHeadRefresh(animator: FastAnimator()) {
+            DispatchQueue.main.async(execute: {
+                self.quotesTableView.cr.beginHeaderRefresh()
+                self.viewModel.loadData {
+                    self.quotesTableView.reloadData()
+                    self.quotesTableView.cr.endHeaderRefresh()
+                }
+            })
+        }
+        
         viewModel.sections.asObservable()
             .bind(to: quotesTableView.rx.items(dataSource: dataSource))
             .disposed(by: disposebag)
@@ -79,9 +93,6 @@ extension QuotesViewController {
 }
 
 extension QuotesViewController {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
-    }
     
     func next(with quote: Quote) {
         let args = ["quote": quote]

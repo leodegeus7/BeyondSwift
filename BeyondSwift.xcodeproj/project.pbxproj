@@ -14,7 +14,19 @@
 		B2983D13DB82B41BA9FF7E7B /* Pods_BeyondSwift_BeyondSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A44B91BF9FABCF2DF4EADD /* Pods_BeyondSwift_BeyondSwiftTests.framework */; };
 		CD2879912179065D007B021A /* APIQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2879902179065D007B021A /* APIQuotesTests.swift */; };
 		CD287993217908C4007B021A /* QuotesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD287992217908C4007B021A /* QuotesViewControllerTests.swift */; };
+		CD6645BA220B1CB100D25858 /* Quote2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6645B7220B1CB100D25858 /* Quote2Cell.xib */; };
+		CD6645BB220B1CB100D25858 /* Quote2CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6645B8220B1CB100D25858 /* Quote2CellViewModel.swift */; };
+		CD6645BC220B1CB100D25858 /* Quote2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6645B9220B1CB100D25858 /* Quote2TableViewCell.swift */; };
+		CD6645BE220B1FE900D25858 /* quotationmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6645BD220B1FE900D25858 /* quotationmarks.png */; };
+		CD6645C1220B23E700D25858 /* elon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6645C0220B23E700D25858 /* elon.jpg */; };
 		CD838AEE216C229400F782C8 /* quotation-white.png in Resources */ = {isa = PBXBuildFile; fileRef = CD838AED216C229400F782C8 /* quotation-white.png */; };
+		CD864F90220B3EA4003B9436 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD864F8F220B3EA4003B9436 /* UIImageExtensions.swift */; };
+		CD864F92220B4DBA003B9436 /* SuperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD864F91220B4DBA003B9436 /* SuperNavigationController.swift */; };
+		CD864F94220B51E4003B9436 /* ImageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD864F93220B51E4003B9436 /* ImageEnum.swift */; };
+		CD864F96220B5F40003B9436 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD864F95220B5F40003B9436 /* UIViewExtensions.swift */; };
+		CD864F98220B65DB003B9436 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CD864F97220B65DB003B9436 /* left-arrow.png */; };
+		CD864F9A220B6B7B003B9436 /* walter.png in Resources */ = {isa = PBXBuildFile; fileRef = CD864F99220B6B7B003B9436 /* walter.png */; };
+		CD864F9C220B6C10003B9436 /* walterWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = CD864F9B220B6C10003B9436 /* walterWhite.png */; };
 		CDBCF09C213D7EB20084AF86 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09B213D7EB20084AF86 /* QuotesViewController.swift */; };
 		CDBCF09E213D7EC90084AF86 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBCF09D213D7EC90084AF86 /* QuotesViewModel.swift */; };
 		CDBCF0A0213D7EDE0084AF86 /* QuotesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBCF09F213D7EDE0084AF86 /* QuotesView.xib */; };
@@ -65,7 +77,19 @@
 		B08EA2CBC0F8C34EEC4168CC /* Pods-BeyondSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift.release.xcconfig"; sourceTree = "<group>"; };
 		CD2879902179065D007B021A /* APIQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIQuotesTests.swift; sourceTree = "<group>"; };
 		CD287992217908C4007B021A /* QuotesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewControllerTests.swift; sourceTree = "<group>"; };
+		CD6645B7220B1CB100D25858 /* Quote2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Quote2Cell.xib; sourceTree = "<group>"; };
+		CD6645B8220B1CB100D25858 /* Quote2CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote2CellViewModel.swift; sourceTree = "<group>"; };
+		CD6645B9220B1CB100D25858 /* Quote2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote2TableViewCell.swift; sourceTree = "<group>"; };
+		CD6645BD220B1FE900D25858 /* quotationmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quotationmarks.png; sourceTree = "<group>"; };
+		CD6645C0220B23E700D25858 /* elon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elon.jpg; sourceTree = "<group>"; };
 		CD838AED216C229400F782C8 /* quotation-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quotation-white.png"; sourceTree = "<group>"; };
+		CD864F8F220B3EA4003B9436 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		CD864F91220B4DBA003B9436 /* SuperNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperNavigationController.swift; sourceTree = "<group>"; };
+		CD864F93220B51E4003B9436 /* ImageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEnum.swift; sourceTree = "<group>"; };
+		CD864F95220B5F40003B9436 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		CD864F97220B65DB003B9436 /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow.png"; sourceTree = "<group>"; };
+		CD864F99220B6B7B003B9436 /* walter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walter.png; sourceTree = "<group>"; };
+		CD864F9B220B6C10003B9436 /* walterWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walterWhite.png; sourceTree = "<group>"; };
 		CDBCF09B213D7EB20084AF86 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		CDBCF09D213D7EC90084AF86 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
 		CDBCF09F213D7EDE0084AF86 /* QuotesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesView.xib; sourceTree = "<group>"; };
@@ -160,12 +184,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD6645B6220B1C9700D25858 /* Quote2Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD6645B7220B1CB100D25858 /* Quote2Cell.xib */,
+				CD6645B8220B1CB100D25858 /* Quote2CellViewModel.swift */,
+				CD6645B9220B1CB100D25858 /* Quote2TableViewCell.swift */,
+			);
+			path = Quote2Cell;
+			sourceTree = "<group>";
+		};
+		CD6645BF220B23D600D25858 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CD6645C0220B23E700D25858 /* elon.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CD864F8E220B3E8B003B9436 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD864F8F220B3EA4003B9436 /* UIImageExtensions.swift */,
+				CD864F95220B5F40003B9436 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CD91CF60213EF2560088A434 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				CD6645BF220B23D600D25858 /* Images */,
 				CDD5E6AC216BD31F0011C983 /* Main.storyboard */,
+				CD864F97220B65DB003B9436 /* left-arrow.png */,
+				CD6645BD220B1FE900D25858 /* quotationmarks.png */,
 				CDBFA78C213DAECE00AC24F1 /* aspas.png */,
 				CD838AED216C229400F782C8 /* quotation-white.png */,
+				CD864F99220B6B7B003B9436 /* walter.png */,
+				CD864F9B220B6C10003B9436 /* walterWhite.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -201,10 +257,13 @@
 		CDBFA785213DAC3F00AC24F1 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				CD864F8E220B3E8B003B9436 /* Extensions */,
 				CDED3B72212B03C300890CF3 /* AppDelegate.swift */,
 				CDED3B79212B03C400890CF3 /* Assets.xcassets */,
 				CDED3B7B212B03C400890CF3 /* LaunchScreen.storyboard */,
 				CDED3B7E212B03C400890CF3 /* Info.plist */,
+				CD864F91220B4DBA003B9436 /* SuperNavigationController.swift */,
+				CD864F93220B51E4003B9436 /* ImageEnum.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -212,6 +271,7 @@
 		CDBFA786213DAC4B00AC24F1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CD6645B6220B1C9700D25858 /* Quote2Cell */,
 				CDBFA782213DAC0B00AC24F1 /* QuoteCell */,
 				CDD5E698216BC4990011C983 /* DetailScreen */,
 				CDBCF09A213D7DFD0084AF86 /* QuotesScreen */,
@@ -419,14 +479,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD864F9C220B6C10003B9436 /* walterWhite.png in Resources */,
 				CDD5E6AD216BD3200011C983 /* Main.storyboard in Resources */,
+				CD6645BE220B1FE900D25858 /* quotationmarks.png in Resources */,
 				CDBFA78D213DAECE00AC24F1 /* aspas.png in Resources */,
+				CD6645BA220B1CB100D25858 /* Quote2Cell.xib in Resources */,
 				CDD5E6A2216BC5340011C983 /* DetailViewController.xib in Resources */,
 				CDBFA78B213DAD3700AC24F1 /* QuoteCell.xib in Resources */,
 				CDBCF0A0213D7EDE0084AF86 /* QuotesView.xib in Resources */,
 				CDED3B7D212B03C400890CF3 /* LaunchScreen.storyboard in Resources */,
+				CD864F98220B65DB003B9436 /* left-arrow.png in Resources */,
 				CD838AEE216C229400F782C8 /* quotation-white.png in Resources */,
 				CDED3B7A212B03C400890CF3 /* Assets.xcassets in Resources */,
+				CD6645C1220B23E700D25858 /* elon.jpg in Resources */,
+				CD864F9A220B6B7B003B9436 /* walter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +575,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeyondSwift/Pods-BeyondSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CRRefresh/CRRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -520,6 +587,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -578,12 +646,18 @@
 				CDED3B73212B03C300890CF3 /* AppDelegate.swift in Sources */,
 				CDBCF09E213D7EC90084AF86 /* QuotesViewModel.swift in Sources */,
 				CDBFA77D213D967300AC24F1 /* APIQuotes.swift in Sources */,
+				CD6645BB220B1CB100D25858 /* Quote2CellViewModel.swift in Sources */,
 				CDBFA77F213D97DB00AC24F1 /* Quote.swift in Sources */,
+				CD6645BC220B1CB100D25858 /* Quote2TableViewCell.swift in Sources */,
 				CDD5E69C216BC4DE0011C983 /* DetailViewModel.swift in Sources */,
 				CDBCF09C213D7EB20084AF86 /* QuotesViewController.swift in Sources */,
 				CDD5E6A6216BC67B0011C983 /* DependencyRegistry.swift in Sources */,
+				CD864F90220B3EA4003B9436 /* UIImageExtensions.swift in Sources */,
 				CDD5E6AB216BD0150011C983 /* SwinjectStoryboard+Extensions.swift in Sources */,
+				CD864F92220B4DBA003B9436 /* SuperNavigationController.swift in Sources */,
 				CDBFA78F213DB12300AC24F1 /* QuoteCellViewModel.swift in Sources */,
+				CD864F94220B51E4003B9436 /* ImageEnum.swift in Sources */,
+				CD864F96220B5F40003B9436 /* UIViewExtensions.swift in Sources */,
 				CDBFA789213DAD1200AC24F1 /* QuoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

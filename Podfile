@@ -16,7 +16,7 @@ target 'BeyondSwift' do
     pod 'SwiftLint'
     pod 'Swinject'
     pod 'SwinjectStoryboard'
-    
+    pod 'CRRefresh'
     def testing_pods
         pod 'Quick'
         pod 'Nimble'

@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var topImage: UIImageView!
     fileprivate var viewModel: DetailViewModel!
     fileprivate weak var navigationCoordinator: NavigationCoordinator?
 
@@ -38,11 +39,38 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        preSetupView()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         setupView()
     }
     
-    func setupView() {
+    @IBAction func closeButton(_ sender: Any) {
+        navigationCoordinator?.movingBack()
+    }
+    
+    func preSetupView() {
         descriptionTextView.text = viewModel.quote.quote
-        authorLabel.text = " -- \(viewModel.quote.author!)"
+        descriptionTextView.sizeToFit()
+        descriptionTextView.layoutIfNeeded()
+        authorLabel.text = "\(viewModel.quote.author!)"
+    }
+    
+    func setupView() {
+        let image = (UIImage(named: "\((viewModel.quote.author ?? "Other"))") ?? UIImage(named: "Other")!)
+        topImage.image = image
+        self.view.backgroundColor = UIColor(red: 0/255, green: 18/255, blue: 29/255, alpha: 1)
+        let gradient = CAGradientLayer()
+        gradient.frame = topImage.bounds
+        let color1 = UIColor(red: 0/255, green: 18/255, blue: 29/255, alpha: 1).cgColor
+        gradient.colors = [color1, UIColor.clear.cgColor]
+        gradient.endPoint = CGPoint(x: 0.5, y: 0.7)
+        gradient.startPoint = CGPoint(x: 0.5, y: 1)
+        topImage.layer.insertSublayer(gradient, at: 0)
+        
+        navigationController?.navigationBar.barStyle = UIBarStyle.black
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
 }

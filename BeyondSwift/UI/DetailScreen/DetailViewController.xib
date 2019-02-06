@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="authorLabel" destination="Kuj-zo-Zai" id="HXN-fr-Snk"/>
                 <outlet property="descriptionTextView" destination="2Yk-b2-q4d" id="lAj-2U-53L"/>
+                <outlet property="topImage" destination="kDs-7i-F28" id="h69-6Z-JG7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,44 +22,74 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-b2-q4d">
-                    <rect key="frame" x="20" y="170" width="335" height="247"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuj-zo-Zai">
-                    <rect key="frame" x="20" y="446" width="57.5" height="24"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotation-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4J-Ld-R5A">
-                    <rect key="frame" x="20" y="115" width="56.5" height="45"/>
-                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rXg-la-KJa">
+                    <rect key="frame" x="20" y="360" width="335" height="207"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotation-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4J-Ld-R5A">
+                            <rect key="frame" x="0.0" y="0.0" width="56.5" height="45"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="MUA-kG-26a"/>
+                                <constraint firstAttribute="width" secondItem="R4J-Ld-R5A" secondAttribute="height" multiplier="1:0.8" id="cM5-TV-cyv"/>
+                            </constraints>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-b2-q4d">
+                            <rect key="frame" x="0.0" y="89" width="335" height="50"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuj-zo-Zai">
+                            <rect key="frame" x="0.0" y="183" width="335" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="45" id="MUA-kG-26a"/>
-                        <constraint firstAttribute="width" secondItem="R4J-Ld-R5A" secondAttribute="height" multiplier="1:0.8" id="cM5-TV-cyv"/>
+                        <constraint firstItem="2Yk-b2-q4d" firstAttribute="top" secondItem="R4J-Ld-R5A" secondAttribute="bottom" constant="44" id="8k2-4r-qFT"/>
+                        <constraint firstItem="Kuj-zo-Zai" firstAttribute="width" secondItem="rXg-la-KJa" secondAttribute="width" id="Tpc-Nj-1Ek"/>
+                        <constraint firstItem="2Yk-b2-q4d" firstAttribute="trailing" secondItem="Kuj-zo-Zai" secondAttribute="trailing" id="wRa-jl-fzo"/>
+                    </constraints>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kDs-7i-F28">
+                    <rect key="frame" x="0.0" y="-30" width="375" height="350"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="TIX-92-Xdz"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25h-9W-dBI">
+                    <rect key="frame" x="30" y="30" width="27" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="9UU-Ge-rqe"/>
+                        <constraint firstAttribute="width" secondItem="25h-9W-dBI" secondAttribute="height" multiplier="27:28" id="hSj-jL-UKJ"/>
+                    </constraints>
+                    <state key="normal" image="left-arrow.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="PiR-nu-0QV"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.70196078429999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.078431372550000003" green="0.27450980390000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="2Yk-b2-q4d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="9YI-Jb-Bz7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Yk-b2-q4d" secondAttribute="trailing" constant="20" id="DkE-LA-Aad"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Yk-b2-q4d" secondAttribute="bottom" constant="250" id="PeS-z3-2cP"/>
-                <constraint firstItem="2Yk-b2-q4d" firstAttribute="top" secondItem="R4J-Ld-R5A" secondAttribute="bottom" constant="10" id="Yp2-d9-vbN"/>
-                <constraint firstItem="2Yk-b2-q4d" firstAttribute="leading" secondItem="R4J-Ld-R5A" secondAttribute="leading" id="Zuj-nY-3bb"/>
-                <constraint firstItem="Kuj-zo-Zai" firstAttribute="leading" secondItem="2Yk-b2-q4d" secondAttribute="leading" id="meV-38-45g"/>
-                <constraint firstItem="2Yk-b2-q4d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="q3R-VL-kb3"/>
-                <constraint firstItem="Kuj-zo-Zai" firstAttribute="top" secondItem="2Yk-b2-q4d" secondAttribute="bottom" constant="29" id="teJ-AK-mf0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kDs-7i-F28" secondAttribute="trailing" id="5Mx-oC-YNg"/>
+                <constraint firstItem="kDs-7i-F28" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-50" id="Cw4-1b-svH"/>
+                <constraint firstItem="25h-9W-dBI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Kfx-ue-aFC"/>
+                <constraint firstItem="rXg-la-KJa" firstAttribute="top" secondItem="kDs-7i-F28" secondAttribute="bottom" constant="40" id="LAA-oN-cZ4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rXg-la-KJa" secondAttribute="bottom" constant="100" id="OFg-iG-zoH"/>
+                <constraint firstItem="rXg-la-KJa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Rbk-v3-GYD"/>
+                <constraint firstItem="kDs-7i-F28" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kEF-PD-Pvy"/>
+                <constraint firstItem="25h-9W-dBI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="rdw-Oq-w40"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rXg-la-KJa" secondAttribute="trailing" constant="20" id="vd6-ai-RIM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="106.40000000000001" y="48.125937031484263"/>
         </view>
     </objects>
     <resources>
+        <image name="left-arrow.png" width="64" height="64"/>
         <image name="quotation-white.png" width="300" height="234"/>
     </resources>
 </document>

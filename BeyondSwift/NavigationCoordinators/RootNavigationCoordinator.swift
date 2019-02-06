@@ -44,13 +44,18 @@ class RootNavigationCoordinatorImpl:NavigationCoordinator {
             break
         case .atDetailsList:
             navState = .atMainList
+            rootViewController.dismiss(animated: true) {
+                
+            }
         }
     }
     
     func showDetails(arguments: [String: Any]?) {
         guard let quote = arguments?["quote"] as? Quote else { notifyNilArguments(); return }
         let detailViewController = registry.makeDetailViewController(with: quote)
-        rootViewController.navigationController?.pushViewController(detailViewController, animated: true)
+        rootViewController.present(detailViewController, animated: true) {
+            
+        }
         navState = .atDetailsList
     }
     
